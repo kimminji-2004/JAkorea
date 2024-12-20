@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <title>윤리경영</title>
+  </head>
+  <body>
+    <div id="wrap">
+        <header class="header-wrap">
+            <div class="inner center">
+                <div class="header-box">
+                    <h1 class="header-logo">
+                    <a href="./main.html"><img src="./img/logo.svg" alt="로고" /></a>
+                    </h1>
+                    <div class="header-gnb">
+                        <ul class="top-menu">
+                            <li class="search-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path d="M384 208A176 176 0 1 0 32 208a176 176 0 1 0 352 0zM343.3 366C307 397.2 259.7 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 51.7-18.8 99-50 135.3L507.3 484.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L343.3 366z">
+                                        </path>
+                                    </svg>
+                                    <span class="blind">검색</span>
+                                </a>
+                            </li>
+                            <li class="facebook-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">   
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="inst-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="youtube-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="toglle-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path d="M0 80c0-8.8 7.2-16 16-16H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H16C7.2 96 0 88.8 0 80zM0 240c0-8.8 7.2-16 16-16H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16zM448 400c0 8.8-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16H432c8.8 0 16 7.2 16 16z">
+                                        </path>
+                                    </svg>
+                                    <span class="blind">전체메뉴</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="main-gnb">
+                            <li class="main-gnb-li">
+                                <a href="./JaKorea.html">
+                                <span>기관소개</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./JaKorea.html">JA Korea</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">함께하는 사람들</a></li>
+                                    <li><a href="#">오시는 길</a></li>
+                                    <li><a href="#">Brand JA</a></li>
+                                    <li><a href="#">JA Worldwide</a></li> 
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./management.html">
+                                <span>투명경영</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./management.html">윤리경영</a></li>
+                                    <li><a href="#">회계감사</a></li>
+                                    <li><a href="#">기부금 사용내역</a></li>
+                                    <li><a href="#">연차 보고서</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./education.html">
+                                <span>교육사업</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./education.html">교육분야</a></li>
+                                    <li><a href="#">프로그램</a></li>
+                                    <li><a href="#">신청·참여</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="#none">
+                                <span>기관소식</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="#">Impact Story</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">언론보도</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./donate.html">
+                                <span>후원하기</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./donate.html">개인후원</a></li>
+                                    <li><a href="#">기업 사회공헌</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-menu-bg"></div>
+        </header>
+      <!-- 메인 콘텐츠 -->
+        <div id="main-banner" class="sub">
+            <div class="inner center">
+                <div class="banner-wrap">
+                    <div class="top-bar">
+                        <ul class="depth-finder">
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M298.6 4c-6-5.3-15.1-5.3-21.2 0L5.4 244c-6.6 5.8-7.3 16-1.4 22.6s16 7.3 22.6 1.4L64 235V432c0 44.2 35.8 80 80 80H432c44.2 0 80-35.8 80-80V235l37.4 33c6.6 5.8 16.7 5.2 22.6-1.4s5.2-16.7-1.4-22.6L298.6 4zM96 432V206.7L288 37.3 480 206.7V432c0 26.5-21.5 48-48 48H368V320c0-17.7-14.3-32-32-32H240c-17.7 0-32 14.3-32 32V480H144c-26.5 0-48-21.5-48-48zm144 48V320h96V480H240z"></path></svg></a></li>
+                            <span></span>
+                            <li><a href="#">투명경영</a></li>
+                            <span></span>
+                            <li class="on"><a href="#">윤리경영</a></li>
+                        </ul>
+                    </div>
+                    <div class="text">
+                        <p class="tit">윤리경영</p>
+                        <p class="desc">
+                            JA Korea는 JA Worldwide의 국제적 윤리 규정을 준수하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-wrap" class="management">
+           <div class="container">
+                <div class="inner center">
+                    <div class="content">
+                        <div id="map-box">
+                            <div class="image">
+                                <img src="./img/management_img/map.svg" alt="map">
+                            </div>
+                            <div class="map">
+                                <p class="show">
+                                    <img src="./img/management_img/logo-pattern-wh.svg" alt="logo-pattern-wh">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="content-text-box">
+                            <p class="tit">JA 회원국 운영</p>
+                            <ul class="txt-wrap">
+                                <li><span>·</span>
+                                JA회원국은 소속 국가에서 비영리법인 혹은 그에 상응하는 성격으로 조직을 운영하며, 해당 국가의 법률과 규정을 준수해야 합니다.
+                                </li>
+                                <li><span>·</span>
+                                JA회원국은 JA Worldwide의 규정을 준수해야하며, 매년 회비를 납부해야 합니다.
+                                </li>
+                                <li><span">·</span>
+                                JA 회원국은 이사회가 승인한 바에 따라 관련 법률에 의한 조례 혹은 그와 동등한 효력이 있는 문서를 제정, 유지해야 합니다.
+                                </li>
+                                <li><span">·</span>
+                                JA 회원국은 관련 법률에 따라 기관 운영 내용을 기록한 문서를 보관해야 합니다. 특히, 이사회 및 총회 등 관련 위원회의 회의록은 해당 위원장의 검토 및 승인을 받은 후 보관해야 합니다.
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="list-wrap">
+                            <ul class="list">
+                                <li class="fade-box">
+                                    <div class="image">
+                                        <img src="./img/management_img/visual_01.jpg" alt="이사회 구성">
+                                    </div>
+                                    <dl class="txt-box">
+                                        <dt>이사회 구성</dt>
+                                        <dd><span >·</span>
+                                            JA회원국의 이사회는 이사회 및 최소 5인 이상의 이사로 구성해야 하며, 재정 및 기관 운영의 전반적인 사항을 심의ㆍ의결 합니다.
+                                        </dd>
+                                        <dd><span >·</span>
+                                            JA회원국의 이사회는 최소 연 2회 이상 개최하고 회의록을 작성하여 보존해야 합니다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="fade-box">
+                                    <div class="image">
+                                        <img src="./img/management_img/visual_04.jpg" alt="재정">
+                                    </div>
+                                    <dl class="txt-box">
+                                        <dt>재정</dt>
+                                        <dd><span>·</span>
+                                            JA회원국은 회계연도에 따라 재무제표 및 당해 년 활동 사항을 포함한 연례 보고서를 작성해야 합니다.
+                                        </dd>
+                                        <dd><span>·</span>
+                                            JA회원국은 최고 수준의 재정 투명성 확보를 위해 이사회의 관리 감독 하에 은행 거래 기록, 지출 증빙 자료, 계약 및 기타 재정 운영과 관련한 사항을 관리해야 합니다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="fade-box">
+                                    <div class="image">
+                                        <img src="./img/management_img/visual_02.jpg" alt="인사관리">
+                                    </div>
+                                    <dl class="txt-box">
+                                        <dt>인사관리</dt>
+                                        <dd><span>·</span>
+                                            JA회원국은 소속 국가의 법률에 따라 인사 정책이 포함된 내부 규정 혹은 지침을 제정해야 합니다.
+                                        </dd>
+                                        <dd><span>·</span>
+                                            JA회원국은 직원들이 JA의 기본 정책과 이념을 이해하고 업무에 착수할 수 있도록 적절히 훈련시켜야 합니다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="fade-box">
+                                    <div class="image">
+                                        <img src="./img/management_img/visual_05.jpg" alt="프로그램">
+                                    </div>
+                                    <dl class="txt-box">
+                                        <dt>프로그램</dt>
+                                        <dd><span>·</span>
+                                            JA회원국은 JA Worldwide가 개발한 교육 모델에 부합하도록 프로그램을 운영해야 합니다.
+                                        </dd>
+                                        <dd><span>·</span>
+                                            JA회원국은 JA Worldwide의 승인을 받은 후에만 JA Worldwide에서 개발하지 않은 임의의 프로그램을 개발 및 운영할 수 있습니다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="fade-box">
+                                    <div class="image">
+                                        <img src="./img/management_img/visual_03.jpg" alt="정보의보호">
+                                    </div>
+                                    <dl class="txt-box">
+                                        <dt>정보의 보호</dt>
+                                        <dd><span>·</span>
+                                            JA회원국은 학생, 자원 봉사자 및 기부자의 모든 개인 정보를 비밀리에 보존해야 합니다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <!-- 푸터 -->
+        <div id="full-wrap">
+            <div class="full">
+                <footer id="footer">
+                    <div class="top">
+                        <div class="up-btn">
+                            <a href="#">
+                                <i class="up" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="inner center" id="full3">
+                            <div class="top-wrap">
+                                <ul>
+                                    <li>
+                                        <button type="button" id="modalTermOpen">
+                                            <span>이용약관</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" id="modalPrivacyOpen">
+                                            <span class="pri">개인정보처리방침</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" id="modalEmailOpen">
+                                            <span>이메일수집거부</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>오시는길</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="family-site">
+                                    <button type="button">관련 사이트 보기</button>
+                                    <ul>
+                                        <li><a href="#" >JA Worldwide</a></li>
+                                        <li><a href="#" >JA Africa</a></li>
+                                        <li><a href="#" >JA Americas</a></li>
+                                        <li><a href="#" >JA Asia Pacific</a></li>
+                                        <li><a href="#" >JA Europe</a></li>
+                                        <li><a href="#" >JA Middle East / INJAZ AI-Arab</a></li>
+                                        <li><a href="#" >JA U.S.A</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="inner center">
+                            <div class="middle-wrap">
+                                <ul class="footer-more">
+                                    <li>
+                                        <a href="#">후원하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">온라인 학습관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">기부금영수증</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">국세청 공시 및 공개 내역</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">국세청 탈세 제보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="inner center">
+                            <div class="bottom-wrap">
+                                <div class="footer-logo">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./img/footer_img/footer-logo.svg" alt="footer-logo">
+                                        </a>
+                                    </p>
+                                </div>
+                                <p class="footer-adr">
+                                    사단법인 제이에이코리아   서울특별시 강서구 마곡중앙로 171, 마곡나루역 프라이빗타워2차 714호 &nbsp;&nbsp;&nbsp;우편번호 : 07788 &nbsp;&nbsp;&nbsp;대표 : 이은형 &nbsp;&nbsp;&nbsp;사업자번호 : 107-82-10367
+                                </p>
+                                <p class="footer-contact">
+                                    <span>대표전화 : 02-783-2367 &nbsp;&nbsp;&nbsp;팩스 : 070-4275-5115 &nbsp;&nbsp;&nbsp;이메일 : jakorea@jakorea.org</span>
+                                </p>
+                                <p class="cpr">
+                                    ⓒJA Korea,2022
+                                </p>
+                                <ul class="footer-family">
+                                    <li>
+                                        <a href="#" title="국세청 새창열림">
+                                            <img src="./img/footer_img/footer_family1.svg" alt="footer_family1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="국민권익위원회 새창열림">
+                                            <img src="./img/footer_img/footer_family2.svg" alt="footer_family2">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="기획재정부 새창열림">
+                                            <img src="./img/footer_img/footer_family3.svg" alt="footer_family3">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

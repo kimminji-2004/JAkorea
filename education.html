@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+    <title>교육분야</title>
+  </head>
+  <body>
+    <div id="wrap">
+        <header class="header-wrap">
+            <div class="inner center">
+                <div class="header-box">
+                    <h1 class="header-logo">
+                    <a href="./main.html"><img src="./img/logo.svg" alt="로고" /></a>
+                    </h1>
+                    <div class="header-gnb">
+                        <ul class="top-menu">
+                            <li class="search-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path d="M384 208A176 176 0 1 0 32 208a176 176 0 1 0 352 0zM343.3 366C307 397.2 259.7 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 51.7-18.8 99-50 135.3L507.3 484.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L343.3 366z">
+                                        </path>
+                                    </svg>
+                                    <span class="blind">검색</span>
+                                </a>
+                            </li>
+                            <li class="facebook-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">   
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="inst-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="youtube-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="toglle-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path d="M0 80c0-8.8 7.2-16 16-16H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H16C7.2 96 0 88.8 0 80zM0 240c0-8.8 7.2-16 16-16H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16zM448 400c0 8.8-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16H432c8.8 0 16 7.2 16 16z">
+                                        </path>
+                                    </svg>
+                                    <span class="blind">전체메뉴</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="main-gnb">
+                            <li class="main-gnb-li">
+                                <a href="./JaKorea.html">
+                                <span>기관소개</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./JaKorea.html">JA Korea</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">함께하는 사람들</a></li>
+                                    <li><a href="#">오시는 길</a></li>
+                                    <li><a href="#">Brand JA</a></li>
+                                    <li><a href="#">JA Worldwide</a></li> 
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./management.html">
+                                <span>투명경영</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./management.html">윤리경영</a></li>
+                                    <li><a href="#">회계감사</a></li>
+                                    <li><a href="#">기부금 사용내역</a></li>
+                                    <li><a href="#">연차 보고서</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./education.html">
+                                <span>교육사업</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./education.html">교육분야</a></li>
+                                    <li><a href="#">프로그램</a></li>
+                                    <li><a href="#">신청·참여</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="#none">
+                                <span>기관소식</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="#">Impact Story</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">언론보도</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./donate.html">
+                                <span>후원하기</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./donate.html">개인후원</a></li>
+                                    <li><a href="#">기업 사회공헌</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-menu-bg"></div>
+        </header>
+      <!-- 메인 콘텐츠 -->
+        <div id="main-banner" class="sub">
+            <div class="inner center">
+                <div class="banner-wrap">
+                    <div class="top-bar">
+                        <ul class="depth-finder">
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><path d="M298.6 4c-6-5.3-15.1-5.3-21.2 0L5.4 244c-6.6 5.8-7.3 16-1.4 22.6s16 7.3 22.6 1.4L64 235V432c0 44.2 35.8 80 80 80H432c44.2 0 80-35.8 80-80V235l37.4 33c6.6 5.8 16.7 5.2 22.6-1.4s5.2-16.7-1.4-22.6L298.6 4zM96 432V206.7L288 37.3 480 206.7V432c0 26.5-21.5 48-48 48H368V320c0-17.7-14.3-32-32-32H240c-17.7 0-32 14.3-32 32V480H144c-26.5 0-48-21.5-48-48zm144 48V320h96V480H240z"></path></svg></a></li>
+                            <span></span>
+                            <li><a href="#">교육사업</a></li>
+                            <span></span>
+                            <li class="on"><a href="#">교육분야</a></li>
+                        </ul>
+                    </div>
+                    <div class="text">
+                        <p class="tit">교육분야</p>
+                        <p class="desc">
+                            진로취업, 경제금융, 기업가정신,<br> 
+                            디지털 리터러시 교육을 제공합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content-wrap" class="education">
+            <div class="inner center">
+                <div class="container">
+                    <div class="content">
+                        <p class="tit">JA교육분야</p>
+                        <ul class="list-wrap">
+                            <li class="list-box">
+                                <div class="image">
+                                    <div class="img-box">
+                                        <img src="./img/education_img/list_1.png" alt="진로취업 Work Readiness">
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <p class="sub-tit">진로취업 Work Readiness</p>
+                                    <p class="txt">
+                                    청소년들이 자신의 진로를 탐색하고 <br>
+                                    성공적인 취업에 필요한 역량을 갖추도록 교육합니다.
+                                    </p>
+                                    <ul class="sub-txt">
+                                        <li><span>-</span>
+                                        중·고·대학생 대상 진로 멘토링
+                                        </li>
+                                        <li><span>-</span>
+                                        임직원 멘토링 및 직무체험 프로그램
+                                        </li>
+                                        <li><span>-</span>
+                                        취업박람회 및 취업역량 강화 프로그램
+                                        </li>
+                                        <li><span>-</span>
+                                        ESG 등 지속가능성 교육 프로그램
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-box">
+                                <div class="image">
+                                    <div class="img-box">
+                                        <img src="./img/education_img/list_2.png" alt="경제금융 Financial Health">
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <p class="sub-tit">경제금융 Financial Health</p>
+                                    <p class="txt">
+                                    청소년들이 시장경제의 원리를 이해하고 경제 지식을 습득하여 <br>
+                                    생활 속에서 합리적인 의사결정을 할 수 있도록 돕습니다.
+                                    </p>
+                                    <ul class="sub-txt">
+                                        <li><span>-</span>
+                                        체험 및 실습 위주의 교육 프로그램 개발
+                                        </li>
+                                        <li><span>-</span>
+                                        JA Korea 경제교육 봉사단 운영
+                                        </li>
+                                        <li><span>-</span>
+                                        1사1교 경제·금융 교육
+                                        </li>
+                                        <li><span>-</span>
+                                        취약계층 대상 경제금융 교육
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-box">
+                                <div class="image">
+                                    <div class="img-box">
+                                        <img src="./img/education_img/list_2.png" alt="기업가정신 Entrepreneurship">
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <p class="sub-tit">기업가정신 Entrepreneurship</p>
+                                    <p class="txt">
+                                    청소년들이 기업과 기업가의 사회적 역할과 기능을 이해하고 <br>
+                                    기업가정신 핵심역량을 키우는 것을 목표로 수준별 맞춤형 체험 교육을 제공합니다.
+                                    </p>
+                                    <ul class="sub-txt">
+                                        <li><span>-</span>
+                                        초·중·고 기업가정신 함양 교육
+                                        </li>
+                                        <li><span>-</span>
+                                        실물 창업 중심의 마켓프로그램
+                                        </li>
+                                        <li><span>-</span>
+                                        국제무역 창업대회 및 워크숍
+                                        </li>
+                                        <li><span>-</span>
+                                        창업아이디어 경진대회 및 캠프
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-box">
+                                <div class="image">
+                                    <div class="img-box">
+                                        <img src="./img/education_img/list_3.png" alt="디지털 리터러시 Digital Literacy">
+                                    </div>
+                                </div>
+                                <div class="text-box">
+                                    <p class="sub-tit">디지털 리터러시 Digital Literacy</p>
+                                    <p class="txt">
+                                    청소년들이 과학기술을 기반으로 지식과 정보를 습득하는 방법을 익히고 <br class="pc-only">
+                                    디지털 플랫폼을 통하여 문제를 해결하는 통합과정을 제공합니다.
+                                    </p>
+                                    <ul class="sub-txt">
+                                        <li><span>-</span>
+                                        초·중·고 소프트웨어 인공지능 교육
+                                        </li>
+                                        <li><span>-</span>
+                                        교사 대상 소프트웨어 교육 연수
+                                        </li>
+                                        <li><span>-</span>
+                                        취약계층 대상 디지털 역량 격차 해소 교육
+                                        </li>
+                                        <li><span>-</span>
+                                        디지털 경진대회
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- 푸터 -->
+        <div id="full-wrap">
+            <div class="full">
+                <footer id="footer">
+                    <div class="top">
+                        <div class="up-btn">
+                            <a href="#">
+                                <i class="up" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="inner center" id="full3">
+                            <div class="top-wrap">
+                                <ul>
+                                    <li>
+                                        <button type="button" id="modalTermOpen">
+                                            <span>이용약관</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" id="modalPrivacyOpen">
+                                            <span class="pri">개인정보처리방침</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" id="modalEmailOpen">
+                                            <span>이메일수집거부</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>오시는길</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="family-site">
+                                    <button type="button">관련 사이트 보기</button>
+                                    <ul>
+                                        <li><a href="#" >JA Worldwide</a></li>
+                                        <li><a href="#" >JA Africa</a></li>
+                                        <li><a href="#" >JA Americas</a></li>
+                                        <li><a href="#" >JA Asia Pacific</a></li>
+                                        <li><a href="#" >JA Europe</a></li>
+                                        <li><a href="#" >JA Middle East / INJAZ AI-Arab</a></li>
+                                        <li><a href="#" >JA U.S.A</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="inner center">
+                            <div class="middle-wrap">
+                                <ul class="footer-more">
+                                    <li>
+                                        <a href="#">후원하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">온라인 학습관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">기부금영수증</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">국세청 공시 및 공개 내역</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">국세청 탈세 제보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="inner center">
+                            <div class="bottom-wrap">
+                                <div class="footer-logo">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./img/footer_img/footer-logo.svg" alt="footer-logo">
+                                        </a>
+                                    </p>
+                                </div>
+                                <p class="footer-adr">
+                                    사단법인 제이에이코리아   서울특별시 강서구 마곡중앙로 171, 마곡나루역 프라이빗타워2차 714호 &nbsp;&nbsp;&nbsp;우편번호 : 07788 &nbsp;&nbsp;&nbsp;대표 : 이은형 &nbsp;&nbsp;&nbsp;사업자번호 : 107-82-10367
+                                </p>
+                                <p class="footer-contact">
+                                    <span>대표전화 : 02-783-2367 &nbsp;&nbsp;&nbsp;팩스 : 070-4275-5115 &nbsp;&nbsp;&nbsp;이메일 : jakorea@jakorea.org</span>
+                                </p>
+                                <p class="cpr">
+                                    ⓒJA Korea,2022
+                                </p>
+                                <ul class="footer-family">
+                                    <li>
+                                        <a href="#" title="국세청 새창열림">
+                                            <img src="./img/footer_img/footer_family1.svg" alt="footer_family1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="국민권익위원회 새창열림">
+                                            <img src="./img/footer_img/footer_family2.svg" alt="footer_family2">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="기획재정부 새창열림">
+                                            <img src="./img/footer_img/footer_family3.svg" alt="footer_family3">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

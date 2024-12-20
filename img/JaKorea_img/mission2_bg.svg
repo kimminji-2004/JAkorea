@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.15 178.01">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+        opacity: .5;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="_레이어_2" data-name="레이어 2">
+      <g id="_레이어_1-2" data-name="레이어 1-2">
+        <g id="_레이어_2-2" data-name="레이어 2-2">
+          <g id="Design">
+            <polygon points="142.12 0 124.37 35.72 94.8 35.8 142.12 0"/>
+            <polygon class="cls-1" points="142.14 0 124.4 35.72 142.15 59.34 142.14 0"/>
+            <polygon points="142.12 59.34 124.37 95.05 94.8 95.14 142.12 59.34"/>
+            <polygon class="cls-1" points="142.14 59.34 124.4 95.05 142.15 118.67 142.14 59.34"/>
+            <polygon points="94.66 35.8 76.91 71.52 47.34 71.6 94.66 35.8"/>
+            <polygon class="cls-1" points="94.68 35.8 76.94 71.52 94.69 95.14 94.68 35.8"/>
+            <polygon points="47.32 71.6 29.57 107.32 0 107.4 47.32 71.6"/>
+            <polygon class="cls-1" points="47.35 71.6 29.6 107.32 47.35 130.94 47.35 71.6"/>
+            <polygon points="94.64 95.14 76.9 130.85 47.32 130.94 94.64 95.14"/>
+            <polygon class="cls-1" points="94.67 95.14 76.92 130.85 94.68 154.47 94.67 95.14"/>
+            <polygon points="142.1 118.67 124.36 154.39 94.78 154.47 142.1 118.67"/>
+            <polygon class="cls-1" points="142.13 118.67 124.38 154.39 142.13 178.01 142.13 118.67"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

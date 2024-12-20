@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JA KOREA</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+        <header class="header-wrap">
+            <div class="inner center">
+                <div class="header-box">
+                    <h1 class="header-logo">
+                    <a href="./main.html"><img src="./img/logo.svg" alt="로고" /></a>
+                    </h1>
+                    <div class="header-gnb">
+                        <ul class="top-menu">
+                            <li class="search-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path d="M384 208A176 176 0 1 0 32 208a176 176 0 1 0 352 0zM343.3 366C307 397.2 259.7 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 51.7-18.8 99-50 135.3L507.3 484.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L343.3 366z">
+                                        </path>
+                                    </svg>
+                                    <span class="blind">검색</span>
+                                </a>
+                            </li>
+                            <li class="facebook-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">   
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="inst-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="youtube-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="toglle-btn">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path d="M0 80c0-8.8 7.2-16 16-16H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H16C7.2 96 0 88.8 0 80zM0 240c0-8.8 7.2-16 16-16H432c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16zM448 400c0 8.8-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16H432c8.8 0 16 7.2 16 16z">
+                                        </path>
+                                    </svg>
+                                    <span class="blind">전체메뉴</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="main-gnb">
+                            <li class="main-gnb-li">
+                                <a href="./JaKorea.html">
+                                <span>기관소개</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./JaKorea.html">JA Korea</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">함께하는 사람들</a></li>
+                                    <li><a href="#">오시는 길</a></li>
+                                    <li><a href="#">Brand JA</a></li>
+                                    <li><a href="#">JA Worldwide</a></li> 
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./management.html">
+                                <span>투명경영</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./management.html">윤리경영</a></li>
+                                    <li><a href="#">회계감사</a></li>
+                                    <li><a href="#">기부금 사용내역</a></li>
+                                    <li><a href="#">연차 보고서</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./education.html">
+                                <span>교육사업</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./education.html">교육분야</a></li>
+                                    <li><a href="#">프로그램</a></li>
+                                    <li><a href="#">신청·참여</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="#none">
+                                <span>기관소식</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="#">Impact Story</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">언론보도</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-gnb-li">
+                                <a href="./donate.html">
+                                <span>후원하기</span>
+                                </a>
+                                <ul class="sub-gnb">
+                                    <li><a href="./donate.html">개인후원</a></li>
+                                    <li><a href="#">기업 사회공헌</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-menu-bg"></div>
+        </header>
+      <!-- 메인 콘텐츠 -->
+        <div id="main-banner" class="main">
+            <div class="inner center">
+                <div class="txt-box">
+                    <strong>청소년들의</strong>
+                    <strong><b>무한한 잠재력</b>을 믿습니다</strong>
+                    <p>
+                        JA Korea는 청소년들이 마음껏 역량을<br> 발휘하며 성공할 수 있도록 함께 합니다.
+                    </p>
+                    <a href="#" class="btn-11">
+                        <span>자세히 보기<i class="far fa-long-arrow-alt-right"></i></span>
+                        <div></div>
+                    </a>
+                </div>
+                <div class="main-home-vdo">
+                    <video id="main-video" preload="metadata" >
+                    <source src="./img/main_img/main-home-01.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="main-home-util">
+                <div class="inner center">
+                    <div class="button-prev"><i class="far fa-chevron-left" aria-hidden="true"></i></div>
+                    <div class="pagination"></div>
+                    <div class="button-pause"><i class="xi-pause"></i></div>
+                    <div class="button-next"><i class="far fa-chevron-right" aria-hidden="true"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="content1" class="main">
+            <div class="inner center">
+                <ul class="quick-menu fade-box">
+                    <li class="fade fade-1 show">
+                        <a href="#none">
+                            <div><img src="./img/main_img/content-1.svg" alt="conten-icon"></div>
+                            <strong>The History of<br>JA Korea</strong>
+                            <p>제이에이코리아가 걸어온 길</p>
+                        </a>
+                    </li>
+                    <li class="fade fade-2 show">
+                        <a href="#none">
+                            <div><img src="./img/main_img/content-2.svg" alt="conten-icon"></div>
+                            <strong>교육분야</strong>
+                            <p>청소년을 위한 다양한 <br class="pc-only">교육을 진행합니다.</p>
+                        </a>
+                    </li>
+                    <li class="fade fade-3 show">
+                        <a href="#none">
+                            <div><img src="./img/main_img/content-3.svg" alt="conten-icon"></div>
+                            <strong>신청·참여</strong>
+                            <p>교육신청 및 모집 현황을 <br class="pc-only">확인하세요.</p>
+                        </a>
+                    </li>
+                    <li class="fade fade-4 show">
+                        <a href="#none">
+                            <div><img src="./img/main_img/content-4.svg" alt="conten-icon"></div>
+                            <strong>뉴스레터</strong>
+                            <p>JA Korea의 <br class="pc-only">다양한 소식을 만나보세요.</p>
+                        </a>
+                    </li>
+                    <li class="fade fade-5 show">
+                        <a href="#none">
+                            <div><img src="./img/main_img/content-5.svg" alt="conten-icon"></div>
+                            <strong>후원하기</strong>
+                            <p>미래세대의 성장을 돕는 <br class="pc-only">일에 동참해주세요.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content2" class="main">
+            <div class="inner center">
+                <div class="section-main-top">
+                    <div class="main-tit">
+                        <h2 class="fade fade-2 show">JA 교육 프로그램</h2>
+                    </div>
+                    <ul class="main-tab main-prg-tab fade fade-3 show">
+                        <li class="">진로취업</li>
+                        <li class="">경제금융</li>
+                        <li class="">기업가정신</li>
+                        <li class="">디지털 리터러시</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="inner center">
+                            <div class="main-prg-txt">
+                                <strong>진로취업 <br>Work Readiness</strong>
+                                <p>
+                                    청소년들이 자신에게 적합한 진로를 탐색하고 <br class="pc-only">
+                                    성공적인 취업에 필요한 역량을 갖추도록 교육합니다.
+                                </p>
+                                <a href="#" class="btn-11">
+                                    <span>자세히 보기<i class="far fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                    <div></div>
+                                </a>
+                            </div>
+                            <div class="main-prg-img">
+                                <img src="./img/main_img/main-prg-0.png" alt="" class="main-prg-3">
+                            </div>
+                        </div>
+                        <div class="main-prg-vsl"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner center">
+                            <div class="main-prg-txt">
+                                <strong>경제금융 <br>Financial Health</strong>
+                                <p>
+                                    청소년들이 시장경제의 원리를 이해하고 경제지식을 습득하여 <br class="pc-only">
+                                    생활 속에서 합리적인 의사결정을 할 수 있도록 돕습니다.
+                                </p>
+                                <a href="#" class="btn-11">
+                                    <span>자세히 보기<i class="far fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                    <div></div>
+                                </a>
+                            </div>
+                            <div class="main-prg-img">
+                                <img src="./img/main_img/main-prg-1.png" alt="" class="main-prg-3">
+                            </div>
+                        </div>
+                        <div class="main-prg-vsl"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner center">
+                            <div class="main-prg-txt">
+                                <strong>기업가정신 <br>Entrepreneurship</strong>
+                                <p>
+                                    청소년들이 기업과 기업가의 사회적 역할과 기능을 이해하고 <br class="pc-only">
+                                    기업가정신의 핵심역량을 키우는 것을 목표로 수준별 맞춤형 체험 교육을 제공합니다.
+                                </p>
+                                <a href="#" class="btn-11">
+                                    <span>자세히 보기<i class="far fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                    <div></div>
+                                </a>
+                            </div>
+                            <div class="main-prg-img">
+                                <img src="./img/main_img/main-prg-2.png" alt="" class="main-prg-3">
+                            </div>
+                        </div>
+                        <div class="main-prg-vsl"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="inner center">
+                            <div class="main-prg-txt">
+                                <strong>디지털 리터러시 <br>Digital Literacy</strong>
+                                <p>
+                                    청소년들이 과학기술을 기반으로 지식과 정보를 습득하는 방법을 익히고, <br class="pc-only">
+                                    디지털 플랫폼을 통하여 분석, 응용, 활용해 문제를 해결하는 통합과정을 다루고 있습니다.
+                                </p>
+                                <a href="#" class="btn-11">
+                                    <span>자세히 보기<i class="far fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                    <div></div>
+                                </a>
+                            </div>
+                            <div class="main-prg-img">
+                                <img src="./img/main_img/main-prg-3.png" alt="" class="main-prg-3">
+                            </div>
+                        </div>
+                        <div class="main-prg-vsl"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next-prg">
+                    <i class="fal fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="swiper-button-prev-prg">
+                    <i class="fal fa-long-arrow-left" aria-hidden="true"></i>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+        <div class="section-main main-number main" id="content3" style="background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(rgb(17, 101, 116)), to(rgb(20, 117, 161)));">
+            <div class="inner center">
+                <div class="number-img">
+                    <div><img src="./img/main_img/files_1729126237_0.jpg" alt=""></div>
+                </div>
+                <ul class="number-li">
+                    <li>
+                        <div class="number-li-top">
+                            <div class="number-li-bar"><span></span></div>
+                            <p class="num">+<span class="numCountCon1">200</span></p>
+                        </div>
+                        <div class="box">
+                            <strong>지역 네트워크</strong>
+                            <p>전국 17개 시도 200개이상의 지역에서 교육하고 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number-li-top">
+                            <div class="number-li-bar"><span></span></div>
+                            <p class="num">+<span class="numCountCon2">1,000</span></p>
+                        </div>
+                        <div class="box">
+                            <strong>학교 및 기관학교</strong>
+                            <p>전국 1,000여개 학교 및 기관, 단체와 협업하여 교육을 진행합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number-li-top">
+                            <div class="number-li-bar"><span></span></div>
+                            <p class="num">+<span class="numCountCon3">3,000</span></p>
+                        </div>
+                        <div class="box">
+                            <strong>교육 진행자</strong>
+                            <p>3,000여명의 전문 지식을 갖춘 봉사자와 교사, 강사가 함께 교육을 진행하고 있습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="number-li-top">
+                            <div class="number-li-bar"><span></span></div>
+                            <p class="num">+<span class="numCountCon4">90,000</span></p>
+                        </div>
+                        <div class="box">
+                            <strong>교육 수혜자</strong>
+                            <p>전국 90,000여명의 청소년들이 교육 프로그램에 참여합니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content4" class="main">
+            <div class="inner center">
+                <div class="fade-box">
+                    <div class="section-main-top">
+                        <div class="main-tit">
+                            <h2 class="fade fade-2 show">JA 기관소식</h2>
+                        </div>
+                        <ul class="main-tab main-prg-tab fade fade-3 show">
+                            <li class="bbsLi bbsLi_notice "><a href="#notice">공지사항</a></li>
+                            <li class="bbsLi bbsLi_story"><a href="#story">스토리</a></li>
+                            <li class="bbsLi bbsLi_news"><a href="#news">언론보도</a></li>
+                        </ul>
+                        <a href="#" id="moreViewBtn" class="btn"><span></span><span></span></a>
+                    </div>
+                    <div class="slide-wrap">
+                        <div class="slide-container" id="notice">
+                            <div class="slide-box">
+                                <div class="slide">
+                                    <a href="#">
+                                        <span>공지사항</span>
+                                        <strong>JA Worldwide Nominated for the 2023 Nobel Peace Prize</strong>
+                                        <p>
+                                            JA Worldwide가 2022년에 이어 2년 연속으로 노벨 평화상 후보에 올라가게 되었습니다.
+                                            
+                                            JA Korea는 JA Worldwide의 멤버입니다.
+                                            
+                                            JA는 전 세계 100여 개국에서 청소년들이 자신의 역량을 길러 성공할 수 있도록 함께 하고 있습니다.
+                                            
+                                            글로벌 경제 속에서 청소년들이 성장하고 이끌어나가며 지역 사회에 공헌할 수 있도록
+                                            
+                                            JA는 끊임 없이 청소년들을 응원하고 교육 받을 수 있는 환경을 조성할 것 입니다.
+                                            
+                                            JA Worldwide가 노벨 평화상 후보에 이어 수상할 때까지 JA 그리고 청소년을 응원해주세요.
+
+                                            자세한 내용은https://www.jaworldwide.org/nobel-nomination 를 참고해주세요.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="slide">
+                                    <a href="#">
+                                        <span>공지사항</span>
+                                        <strong>창업놀이터 페스티벌 2022, 청소년 기업가들을 위한 투자자가 되어주세요!</strong>
+                                        <p>
+                                            JA Korea-삼성
+                                            창업놀이터 페스티벌 2022
+                                            모의투자 참여하러 가기(클릭)
+                                            모의투자 참여하러 가기(클릭)
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="slide">
+                                    <a href="#">
+                                        <span>공지사항</span>
+                                        <strong>2022-2023 JA 소셜크리에이터 6기 합격자 발표 </strong>
+                                    </a>
+                                </div>
+                                <div class="slide">
+                                    <a href="#">
+                                        <span>공지사항</span>
+                                        <strong>2022-2023 JA 소셜크리에이터 6기 모집 </strong>
+                                        <p>
+                                            JA 소셜크리에이터 6기 신청하기
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="slide">
+                                    <a href="#">
+                                        <span>공지사항</span>
+                                        <strong>2022-2023 JA 소셜크리에이터 6기 모집 </strong>
+                                        <p>
+                                            JA 소셜크리에이터 6기 신청하기
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="slide">
+                                    <a href="#">
+                                        <span>공지사항</span>
+                                        <strong>2022-2023 JA 소셜크리에이터 6기 모집 </strong>
+                                        <p>
+                                            JA 소셜크리에이터 6기 신청하기
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev-news btn-13" tabindex="0" role="button" aria-label="Previous slide"><i class="far fa-long-arrow-alt-left" aria-hidden="true"></i><div></div></div>
+                        <div class="swiper-button-next-news btn-13" tabindex="0" role="button" aria-label="Next slide"><i class="far fa-long-arrow-alt-right" aria-hidden="true"></i><div></div></div>
+                    </div>
+                </div>
+                <div class="news-wrap">
+                    <div class="news-box fade-box">
+                        <div class="board-top">
+                            <h2 class="cont-tit-4 fade fade-1 show">모집공고</h2>
+                            <a href="#" class="btn"><span></span><span></span></a>
+                        </div>
+                        <ul class="board-li fade fade-3 show">   
+                            <li>
+                                <a href="#">
+                                    <span class="board-tag crewing">모집중</span>
+                                    <div class="board-li-txt">
+                                        <strong>2025년 JA Korea 초등 경제교육 대상학교 모집</strong>
+                                        <span>2024-12-09</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="board-tag end">모집완료</span>
+                                    <div class="board-li-txt">
+                                        <strong>[참가자모집] 스타벅스 고졸 바리스타 채용 프로그램 Opportunity Fair 참가학생 모집 안내 </strong>
+                                        <span>2024-11-11</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="board-tag end">모집완료</span>
+                                    <div class="board-li-txt">
+                                        <strong>[SAP-JA Korea] Step for walking together 취업·직무 멘토링 참여자 모집</strong>
+                                        <span>2024-11-06</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="board-tag end">모집완료</span>
+                                    <div class="board-li-txt">
+                                        <strong>2024 Build Your Opportunities_Job Fair 참가자 모집 </strong>
+                                        <span>2024-09-30</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news-box fade-box">
+                        <div class="board-top">
+                            <h2 class="cont-tit-4 fade fade-2 show">결과발표</h2>
+                            <a href="#" class="btn"><span></span><span></span></a>
+                        </div>
+                        <ul class="board-li fade fade-4 show">
+                            <li>
+                                <a href="#">
+                                    <div class="board-li-txt">
+                                        <strong>2024 JA Korea 대학생경제교육봉사단 UJAT33기 최종 합격 발표</strong>
+                                        <span>2024-08-05</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="board-li-txt">
+                                        <strong>2024 JA Korea 대학생경제교육봉사단 UJAT33기 서류 합격 발표</strong>
+                                        <span>2024-07-26</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="board-li-txt">
+                                        <strong>2024년 2학기 JA Korea 초등 경제교육 선정학교 발표 </strong>
+                                        <span>2024-06-27</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="board-li-txt">
+                                        <strong>2024 FedEx/JA 국제무역창업대회 ITC 국내 본선대회 진출자 발표</strong>
+                                        <span>2024-05-28</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content5" class="main">
+            <!-- <div class="main-vdo-cover" style="background-image:url('/inc/img/main/main-vdo.jpg');">
+                <button type="button" class="play-btn" id="mainVdoPlay">
+                    <i class="fas fa-play" aria-hidden="true"></i>
+                    <i class="far fa-play" aria-hidden="true"></i>
+                </button>
+            </div> -->
+            <video muted="" loop="" autoplay="" playsinline="" preload="metadata" id="mainVdo">
+                <source src="./img/main_img/main-home_03.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="content6" class="main">
+            <div class="inner center">
+                <div class="main-support-tit">
+                    <div class="main-tit">
+                        <small class="fade fade-1 show">국내외 여러기업이 동참하고 있습니다.</small>
+                        <h2 class="fade fade-2 show">JA Korea 후원</h2>
+                        <div class="fade fade-3 show">
+                            <a href="#" class="btn-11">
+                                <span>자세히 보기<i class="far fa-long-arrow-alt-right" aria-hidden="true"></i></span>
+                                <div></div>
+                            </a>
+                        </div>
+                        <div class="main-support-util fade fade-4 show">
+                            <div class="swiper-button-prev-support" tabindex="0" role="button" aria-label="Previous slide"><i class="fal fa-long-arrow-left" aria-hidden="true"></i></div>
+                            <div class="swiper-button-next-support" tabindex="0" role="button" aria-label="Next slide"><i class="fal fa-long-arrow-right" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-support-slide-wrap fade fade-5 show">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" id="swiper-wrapper-35f7e935118b3ea8" aria-live="polite">
+                            <div class="swiper-slide" role="group" style="width: 890px;transition-duration: 0ms;opacity: 1;transform: translate3d(0px, 0px, 0px);">
+                                <ul class="company-li">
+                                    <li>
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1653462033_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1652102649_0.svg" alt="" class=""></div>  
+                                    </li>   
+                                    <li>                           
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1652102516_0.svg" alt="" class=""></div>                           
+                                    </li>                       
+                                    <li>                            
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1652102504_0.svg" alt="" class=""></div>    
+                                    </li>
+                                    <li>                     
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1652102492_0.svg" alt="" class=""></div>
+                                    </li> 
+                                    <li>
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1652102768_0.svg" alt="" class=""></div>                           
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1652102782_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1652102935_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/main_img/content6/files_1653461785_0.svg" alt="" class=""></div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="swiper-slide" role="group" style="width: 890px;transition-duration: 0ms;opacity: 0;transform: translate3d(0px, 0px, 0px);">
+                                <ul class="company-li">
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1653462033_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102649_0.svg" alt="" class=""></div>  
+                                    </li>   
+                                    <li>                           
+                                        <div class="company-img"><img src="./img/content6/files_1652102516_0.svg" alt="" class=""></div>                           
+                                    </li>                       
+                                    <li>                            
+                                        <div class="company-img"><img src="./img/content6/files_1652102504_0.svg" alt="" class=""></div>    
+                                    </li>
+                                    <li>                     
+                                        <div class="company-img"><img src="./img/content6/files_1652102492_0.svg" alt="" class=""></div>
+                                    </li> 
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102768_0.svg" alt="" class=""></div>                           
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102782_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102935_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1653461785_0.svg" alt="" class=""></div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide" role="group" style="width: 890px;transition-duration: 0ms;opacity: 0;transform: translate3d(0px, 0px, 0px);">
+                                <ul class="company-li">
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1653462033_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102649_0.svg" alt="" class=""></div>  
+                                    </li>   
+                                    <li>                           
+                                        <div class="company-img"><img src="./img/content6/files_1652102516_0.svg" alt="" class=""></div>                           
+                                    </li>                       
+                                    <li>                            
+                                        <div class="company-img"><img src="./img/content6/files_1652102504_0.svg" alt="" class=""></div>    
+                                    </li>
+                                    <li>                     
+                                        <div class="company-img"><img src="./img/content6/files_1652102492_0.svg" alt="" class=""></div>
+                                    </li> 
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102768_0.svg" alt="" class=""></div>                           
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102782_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1652102935_0.svg" alt="" class=""></div>
+                                    </li>
+                                    <li>
+                                        <div class="company-img"><img src="./img/content6/files_1653461785_0.svg" alt="" class=""></div> 
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 푸터 -->
+        <div id="full-wrap">
+            <div class="full">
+                <footer id="footer">
+                    <div class="top">
+                        <div class="up-btn">
+                            <a href="#">
+                                <i class="up" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="inner center" id="full3">
+                            <div class="top-wrap">
+                                <ul>
+                                    <li>
+                                        <button type="button" id="modalTermOpen">
+                                            <span>이용약관</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" id="modalPrivacyOpen">
+                                            <span class="pri">개인정보처리방침</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" id="modalEmailOpen">
+                                            <span>이메일수집거부</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>오시는길</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="family-site">
+                                    <button type="button">관련 사이트 보기</button>
+                                    <ul>
+                                        <li><a href="#" >JA Worldwide</a></li>
+                                        <li><a href="#" >JA Africa</a></li>
+                                        <li><a href="#" >JA Americas</a></li>
+                                        <li><a href="#" >JA Asia Pacific</a></li>
+                                        <li><a href="#" >JA Europe</a></li>
+                                        <li><a href="#" >JA Middle East / INJAZ AI-Arab</a></li>
+                                        <li><a href="#" >JA U.S.A</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="inner center">
+                            <div class="middle-wrap">
+                                <ul class="footer-more">
+                                    <li>
+                                        <a href="#">후원하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">온라인 학습관리</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">기부금영수증</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">국세청 공시 및 공개 내역</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">국세청 탈세 제보</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="inner center">
+                            <div class="bottom-wrap">
+                                <div class="footer-logo">
+                                    <p>
+                                        <a href="#">
+                                            <img src="./img/footer_img/footer-logo.svg" alt="footer-logo">
+                                        </a>
+                                    </p>
+                                </div>
+                                <p class="footer-adr">
+                                    사단법인 제이에이코리아   서울특별시 강서구 마곡중앙로 171, 마곡나루역 프라이빗타워2차 714호 &nbsp;&nbsp;&nbsp;우편번호 : 07788 &nbsp;&nbsp;&nbsp;대표 : 이은형 &nbsp;&nbsp;&nbsp;사업자번호 : 107-82-10367
+                                </p>
+                                <p class="footer-contact">
+                                    <span>대표전화 : 02-783-2367 &nbsp;&nbsp;&nbsp;팩스 : 070-4275-5115 &nbsp;&nbsp;&nbsp;이메일 : jakorea@jakorea.org</span>
+                                </p>
+                                <p class="cpr">
+                                    ⓒJA Korea,2022
+                                </p>
+                                <ul class="footer-family">
+                                    <li>
+                                        <a href="#" title="국세청 새창열림">
+                                            <img src="./img/footer_img/footer_family1.svg" alt="footer_family1">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="국민권익위원회 새창열림">
+                                            <img src="./img/footer_img/footer_family2.svg" alt="footer_family2">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="기획재정부 새창열림">
+                                            <img src="./img/footer_img/footer_family3.svg" alt="footer_family3">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
